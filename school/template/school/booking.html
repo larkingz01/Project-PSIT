@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	{% load static %}
+	<title>BOOKING</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Foody Inn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="icon" type="image/png" href="{% static 'images/icons/booking.png'%}"/>
+	<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="{% static 'css/flexslider.css'%}" type="text/css" media="screen" property="" />
+
+	<link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}" />
+	<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/swipebox.css'%}">
+	<link href="{% static '//fonts.googleapis.com/css?family=Lato:300,400,700,900'%}" rel="stylesheet">
+	<link href="{% static '//fonts.googleapis.com/css?family=Raleway:300,400,500,600,800'%}" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Reservation -->
+
+	<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home-page' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'booking-page' %}">Booking</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'table-page' %}">Score</a>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+	  </li>
+    </ul>
+    
+	<div class="events-section" id="events">
+		<div class="login100-form-title">
+			<!-- form -->
+			<div class="container">
+				<div class="reserve-form">
+					<h3 class="tittle-w3ls two">BOOKING FORMS</h3>
+					<form action="#" method="POST">
+						{% csrf_token %}
+						<p style="color:red">**ต้องใช้ชื่อในการจอง 1 คอร์ด ทั้งหมด 4 ชื่อ**</p>
+						<div class="agile-input-filed2">
+							<div class="agile-input-filed">
+								<input type="text" id="name1" name="name1" placeholder="Name 1" required="" />
+								</div>
+							<div class="agile-input-filed2">
+								<input type="text" id="name2" name="name2" placeholder="Name 2" required="" />
+								</div>
+							<div class="agile-input-filed2">
+								<input type="text" id="name3" name="name3" placeholder="Name 3" required="" />
+								</div>
+							<div class="agile-input-filed2">
+								<input type="text" id="name4" name="name4" placeholder="Name 4" required="" />
+								</div>
+						</div>
+						<div class="mid-fields">
+							<div class="agile-input-filed">
+								<input type="text"  id="court" name="court" placeholder="เลือก Court 1 - 8" required="" />
+
+							</div>
+							<div class="agile-input-filed">
+								
+								 <input type="time" step="600" id="time" name="time">
+									
+								<input type="submit" value="CONFIRM">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- //form -->	
+	<!--// Reservation -->
+</body>
+</html>
+
+<option value="court" type="option" id="court" name="court" placeholder="Choose your Court" required=""/>

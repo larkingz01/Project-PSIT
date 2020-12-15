@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Welcome !</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="{% static 'img/icons/homepage.png'%}"/>
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/fontAwesome.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/hero-slider.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/templatemo-main.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl-carousel.css'%}">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+
+    </head>
+
+<body>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>Badminton</h1>
+                <span><em>Court</em> Booking</span>
+                <div>
+                  {% if user.is_authenticated %}
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home-page' %}">Home<span class="sr-only">(current)</span></a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'table-page' %}">Score</a>
+                      </li>
+                    </ul>
+                    <a class="primary-button" href="{% url 'logout' %}">Log out</a>
+                    <h4><br><a style="color:whitesmoke;" href="{% url 'booking-page' %}"><em>Booking Court</em></a></br></h4>
+                  {% else %}
+                    <div class="container">
+                        <br>
+                            <br><a style="color:whitesmoke;" href="{% url 'register-page' %}">Dont' have ID?, <em>Register!</em></a></br>
+                        </br>
+                    </div>
+                    <h4><a class="primary-button" href="{% url 'login' %}">Log in</a></h4>
+                  {% endif %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
