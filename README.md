@@ -13,7 +13,7 @@
 สะดวกและรวดเร็วต่อการใช้งาน
 
 
-**[BADMINTON](http://103.91.205.102:8000/?fbclid=IwAR2-nAjrcNiEg6ixqxSntFD9-cGIpgaSrY19KhNj_kYu7d7vLoBJ0cxqiwc)**
+url : **[BADMINTON](http://103.91.205.102:8000/?fbclid=IwAR2-nAjrcNiEg6ixqxSntFD9-cGIpgaSrY19KhNj_kYu7d7vLoBJ0cxqiwc)**
 
 สมาชิก | รหัสนักศึกษา | หน้าที่ | Github |
 :--------:|:-----------:|:-------:|:--------:|
