@@ -14,6 +14,7 @@
 
 
 url : **[BADMINTON](http://103.91.205.102:8000/?fbclid=IwAR2-nAjrcNiEg6ixqxSntFD9-cGIpgaSrY19KhNj_kYu7d7vLoBJ0cxqiwc)**
+https://www.youtube.com/watch?v=t-o7BACQOew&feature=youtu.be
 
 สมาชิก | รหัสนักศึกษา | หน้าที่ | Github |
 :--------:|:-----------:|:-------:|:--------:|
